@@ -1,0 +1,71 @@
+.cardDiv {
+  background-color: aqua;
+  max-width: 25rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.postDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.postDiv .cards {
+  padding: 1rem;
+}
+
+.postDiv .card {
+  min-height: 18rem;
+  border-radius: 1.2rem;
+}
+
+.card-img {
+  min-height: 15rem;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.post-icons{
+  width: 10rem;
+  margin-bottom: 0.5rem;
+}
+.heart{
+  margin-right: 1rem;
+}
+
+.comment{
+  margin-right: 1rem;
+}
+
+.heart:hover{
+  color: #E0144C;
+}
+
+
+.card__footer {
+  display: flex;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.user {
+  display: flex;
+  gap: .5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info h5 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.user__info>small {
+  color: #666;
+}

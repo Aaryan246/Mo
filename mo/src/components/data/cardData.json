@@ -1,0 +1,76 @@
+{
+  "post": [
+    {
+      "id": 1,
+      "name": "post 1",
+      "image": "https://images.pexels.com/photos/9037222/pexels-photo-9037222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "caption": "Clean Beach, Clean Earth. Come with us and secure the future.",
+      "userimg": "https://i.pravatar.cc/40?img=1",
+      "username": "Johna Doe",
+      "like": 34
+    },
+    {
+      "id": 2,
+      "name": "post 2",
+      "image": "https://images.pexels.com/photos/2990644/pexels-photo-2990644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "caption": "Fight today to protect tomorrow, Protect Children Rights.",
+      "userimg": "https://i.pravatar.cc/40?img=1",
+      "username": "Johnson Doe",
+      "like" : 34
+    },
+    {
+      "id": 3,
+      "name": "post 3",
+      "image": "https://images.pexels.com/photos/6994982/pexels-photo-6994982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "caption": "More you have the more you donate. Food donation Drive on 28th November.",
+      "userimg": "https://i.pravatar.cc/40?img=1",
+      "username": "Johnson Doe",
+      "like" : 34
+    },
+    {
+      "id": 4,
+      "name": "post 4",
+      "image": "https://images.pexels.com/photos/1001675/pexels-photo-1001675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "caption": "Support me in the movement to complete my thesis and join my journey.",
+      "userimg": "https://i.pravatar.cc/40?img=1",
+      "username": "Johnson Doe",
+      "like" : 34
+    },
+    {
+      "id": 5,
+      "name": "post 4",
+      "image": "https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/PTI_Kerala_Flood_Kochi_19_Aug_2.jpg?itok=l9SwQ5C1",
+      "caption": "Help thoose who need it. Provide donations for flood drive.",
+      "userimg": "https://i.pravatar.cc/40?img=1",
+      "username": "Johnson Doe",
+      "like" : 34
+    },
+    {
+      "id": 6,
+      "name": "post 4",
+      "image": "https://klayschoolslive.s3.ap-south-1.amazonaws.com/wp-content/uploads/2019/01/04183527/dc4.jpg",
+      "caption": "Childhood is an important part in life. Help raise funds for those little ones.",
+      "userimg": "https://i.pravatar.cc/40?img=1",
+      "username": "Johnson Doe",
+      "like" : 34
+    },
+    {
+      "id": 7,
+      "name": "post 4",
+      "image": "https://images.pexels.com/photos/4289045/pexels-photo-4289045.png?auto=compress&cs=tinysrgb&w=1600",
+      "caption": "Water is the start to everything. Save water & Save yourself by turning off taps. 💧💧",
+      "userimg": "https://i.pravatar.cc/40?img=1",
+      "username": "Johnson Doe",
+      "like" : 34
+    },
+    {
+      "id": 8,
+      "name": "post 4",
+      "image": "https://swachhbharat.mygov.in/system/storage/serve/517856/4_433.jpg%3Fitok%3D1",
+      "caption": "Cleanliness Drive in Society to make a cleaner and brighter future for everyone.",
+      "userimg": "https://i.pravatar.cc/40?img=1",
+      "username": "Johnson Doe",
+      "like" : 34
+    }
+  ]
+}
