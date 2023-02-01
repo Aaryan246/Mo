@@ -42,6 +42,30 @@
         </div>
       </div>
     </nav>
-    Welcome to Mo!
+    <!-- <blockquote class="blockquote-css">
+      <p>Hello world this is an awesome quote with no css.</p>
+    </blockquote>
+    <div class="card" style="width: 18rem">
+      <img src="..." class="card-img-top" alt="..." />
+      
+    </div> -->
+    <% items.forEach(function(image) { %>
+    <div class="card" style="width: 18rem">
+      <img
+        class="card-img-top card-img"
+        src="data:image/<%=image.cover.contentType%>;base64,
+                     <%=image.cover.data.toString('base64')%>"
+      />
+      <!-- <img
+        src="data:image/<%=image.authorAvatar.contentType%>;base64,
+                     <%=image.authorAvatar.data.toString('base64')%>"
+      /> -->
+      <div class="card-body">
+        <h5 class="card-title"><%= image.title %></h5>
+        <p class="card-text"><%= image.description %></p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <% }) %>
   </body>
 </html>

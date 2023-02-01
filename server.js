@@ -69,13 +69,17 @@ const blogList = new mongoose.model("blogList", blogListSchema);
 // Step 7 - the GET request handler that provides the HTML UI
 
 app.get("/", (req, res) => {
+  res.render("index");
+});
+
+app.get("/motivation", (req, res) => {
   blogList.find({}, (err, items) => {
     if (err) {
       console.log(err);
       res.status(500).send("An error occurred", err);
     } else {
       // console.log(items)
-      res.render("index", { items: items });
+      res.render("motivation", { items: items });
     }
   });
 });
@@ -125,7 +129,7 @@ app.post(
         console.log(err);
       } else {
         // item.save();
-        res.redirect("/");
+        res.redirect("/motivation");
       }
     });
   }
@@ -155,7 +159,7 @@ app.post("/register", upload.single("userAvatar"), (req, res, next) => {
           console.log(err);
         } else {
           // item.save();
-          res.redirect("/");
+          res.redirect("/motivation");
         }
       });
     }
@@ -177,10 +181,6 @@ app.post("/login", (req, res, next) => {
       );
     }
   });
-});
-
-app.get("/motivation", (req, res) => {
-  res.sendFile(path.join(__dirname + "/views/motivation.html"));
 });
 
 app.get("/motive", (req, res) => {
