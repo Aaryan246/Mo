@@ -1,4 +1,4 @@
-# mo_backend
+# Mo
 
 ## To run the project
 <li> Create uploads folder</li>
