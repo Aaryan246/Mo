@@ -84,8 +84,8 @@ app.get("/motivation", (req, res) => {
   });
 });
 
-app.get("/newpost", (req, res) => {
-  res.render("newpost");
+app.get("/movement", (req, res) => {
+  res.render("movement");
 });
 app.get("/register", (req, res) => {
   res.render("register");
@@ -95,7 +95,7 @@ app.get("/login", (req, res) => {
 });
 
 app.post(
-  "/newpost",
+  "/movement",
   upload.fields([
     { name: "authorAvatar", maxCount: 1 },
     { name: "cover", maxCount: 1 },
@@ -192,12 +192,8 @@ app.get("/motive", (req, res) => {
   res.sendFile(path.join(__dirname + "/views/motive.html"));
 });
 
-app.get("/movement", (req, res) => {
-  res.sendFile(path.join(__dirname + "/views/movement.html"));
-});
-
 app.get("/profile", (req, res) => {
-  res.sendFile(path.join(__dirname + "/views/profile.html"));
+  res.render("profile");
 });
 
 app.listen(3000, () => {

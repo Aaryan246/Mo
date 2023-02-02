@@ -1,0 +1,43 @@
+* {
+}
+
+.login-btn,
+.register-btn {
+  border: 0;
+  /* color: rgba(0, 0, 0, 0); */
+  background-color: #f8f9fa;
+  color: #797979;
+  margin: 0 0.5em;
+}
+
+.post {
+  margin: 30px;
+}
+
+.cardpost-img {
+  min-height: 10rem;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.cardHeading {
+  display: flex;
+}
+.cardHeading div {
+  padding: 0.3rem;
+}
+.card-title-div {
+  display: flex;
+  flex-direction: column;
+}
+.postDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+.likeDiv {
+}
