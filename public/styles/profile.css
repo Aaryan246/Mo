@@ -1,6 +1,7 @@
 body {
   background: #7f7fd5;
   background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  font-family: "Poppins", sans-serif;
 }
 
 .login-btn,
@@ -8,7 +9,7 @@ body {
   border: 0;
   /* color: rgba(0, 0, 0, 0); */
   background-color: #f8f9fa;
-  color: #93c6e7;
+  color: #797979;
   margin: 0 0.5em;
 }
 
