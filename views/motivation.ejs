@@ -12,6 +12,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/font-awesome.min.css"
     />
     <script
@@ -21,6 +25,7 @@
     ></script>
     <title>Mo.</title>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
@@ -44,28 +49,74 @@
             <a class="nav-link" href="/profile">Profile</a>
           </div>
         </div>
+        <div>
+          <button class="login-btn" onclick="login()">Login</button>
+        </div>
+        <div>
+          <button class="register-btn" onclick="register()">Register</button>
+        </div>
       </div>
     </nav>
-    <% items.forEach(function(image) { %>
-    <div class="card post" style="width: 18rem">
-      <img
-        class="card-img-top cardpost-img"
-        src="data:image/<%=image.cover.contentType%>;base64,
+    <div class="postDiv">
+      <% items.forEach(function(image) { %>
+      <div class="card post col-3" style="width: 18rem">
+        <img
+          class="card-img-top cardpost-img"
+          src="data:image/<%=image.cover.contentType%>;base64,
                      <%=image.cover.data.toString('base64')%>"
-      />
-      <!-- <img
-        src="data:image/<%=image.authorAvatar.contentType%>;base64,
-                     <%=image.authorAvatar.data.toString('base64')%>"
-      /> -->
-      <div class="card-body">
-        <div class="card-title">
-          <i class="fa fa-hand-heart"></i>
+        />
+
+        <div class="card-body">
+          <div class="cardHeading">
+            <div class="card-avatar">
+              <img
+                class="avatar"
+                src="data:image/<%=image.authorAvatar.contentType%>;base64,
+                         <%=image.authorAvatar.data.toString('base64')%>"
+              />
+            </div>
+            <div class="card-title-div">
+              <h5 class="card-title"><%= image.title %></h5>
+              <h6><%= image.createdAt%></h6>
+            </div>
+            <div class="likeDiv">
+              <img
+                src="/assets/images/hand1.jpg"
+                width="50px"
+                height="50px"
+                id="<%= image.title %>"
+                onclick="updateLike('<%= image.title %>')"
+              />
+            </div>
+          </div>
+
+          <p class="card-text"><%= image.description %></p>
+          <a href="#" class="btn btn-primary">Support</a>
         </div>
-        <h5 class="card-title"><%= image.title %></h5>
-        <p class="card-text"><%= image.description %></p>
-        <a href="#" class="btn btn-primary">Support</a>
       </div>
+      <% }) %>
     </div>
-    <% }) %>
   </body>
+  <script>
+    function login() {
+      window.location.href = window.location.href.replace(
+        "motivation",
+        "login"
+      );
+    }
+    function register() {
+      window.location.href = window.location.href.replace(
+        "motivation",
+        "register"
+      );
+    }
+    function updateLike(id) {
+      let img = document.getElementById(id);
+      if (img.src == "http://localhost:3000/assets/images/hand2.jpg") {
+        img.src = "http://localhost:3000/assets/images/hand1.jpg";
+      } else {
+        img.src = "/assets/images/hand2.jpg";
+      }
+    }
+  </script>
 </html>

@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
 mongoose.connect(
-  "mongodb+srv://dbUser:dbUser@cluster0.cnk8fck.mongodb.net/dbUser",
+  "mongodb://dbUser:dbUser@ac-b9dmcqy-shard-00-00.2p5uewi.mongodb.net:27017,ac-b9dmcqy-shard-00-01.2p5uewi.mongodb.net:27017,ac-b9dmcqy-shard-00-02.2p5uewi.mongodb.net:27017/?ssl=true&replicaSet=atlas-pg2gml-shard-0&authSource=admin&retryWrites=true&w=majority",
   { useNewUrlParser: true },
   { useUnifiedTopology: true },
   () => {
@@ -85,13 +85,13 @@ app.get("/motivation", (req, res) => {
 });
 
 app.get("/newpost", (req, res) => {
-  res.sendFile(path.join(__dirname + "/views/newPost.html"));
+  res.render("newpost");
 });
 app.get("/register", (req, res) => {
-  res.sendFile(path.join(__dirname + "/views/register.html"));
+  res.render("register");
 });
 app.get("/login", (req, res) => {
-  res.sendFile(path.join(__dirname + "/views/login.html"));
+  res.render("login");
 });
 
 app.post(
@@ -171,9 +171,14 @@ app.post("/login", (req, res, next) => {
     if (user) {
       password = req.body.password;
       if (user.password === password) {
-        res.send(user);
+        res
+          .status(200)
+          // .json({
+          //   user: user,
+          // })
+          .render("index.ejs", user);
       } else {
-        res.send("enter the correct password");
+        res.sendFile();
       }
     } else {
       res.send(

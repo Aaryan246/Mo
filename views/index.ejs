@@ -47,6 +47,12 @@
             <a class="nav-link" href="/profile">Profile</a>
           </div>
         </div>
+        <div>
+          <button onclick="login()">Login</button>
+        </div>
+        <div>
+          <button onclick="register()">Register</button>
+        </div>
       </div>
     </nav>
     <!-- TAGLINE -->
@@ -64,25 +70,22 @@
           <li class="feature-1">
             <h4>Motivation</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              mollis turpis ac libero interdum, id fringilla purus feugiat.
-              Etiam malesuada mattis nibh at bibendum.
+              Explore the on-going movements that have been going and support
+              them or get inspired by it.
             </p>
           </li>
           <li class="feature-2">
             <h4>Motive</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              mollis turpis ac libero interdum, id fringilla purus feugiat.
-              Etiam malesuada mattis nibh at bibendum.
+              Read different articles published by others to understand and
+              inspired by the movements. You can even publish your own articles.
             </p>
           </li>
           <li class="feature-3">
             <h4>Movement</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              mollis turpis ac libero interdum, id fringilla purus feugiat.
-              Etiam malesuada mattis nibh at bibendum.
+              Inspired by some motive, user can create their own movement to
+              inspire others to join them.
             </p>
           </li>
           <div class="clear"></div>
@@ -124,4 +127,12 @@
       </div>
     </footer>
   </body>
+  <script>
+    function login() {
+      window.location.href += "login";
+    }
+    function register() {
+      window.location.href += "register";
+    }
+  </script>
 </html>
