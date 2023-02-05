@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/motive.css" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <title>Article.</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Mo.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="/movement">Movement</a>
+            <a class="nav-link" href="/motive">Motive</a>
+            <a class="nav-link" href="/motivation">Motivation</a>
+            <a class="nav-link" href="/profile">Profile</a>
+          </div>
+        </div>
+        <div>
+          <button class="login-btn" onclick="login()">Login</button>
+        </div>
+        <div>
+          <button class="register-btn" onclick="register()">Register</button>
+        </div>
+      </div>
+    </nav>
+    <!---->
+    <div class="content clearfix">
+      <div class="main-content">
+        <h1 class="recent-post-title">Articles</h1>
+
+        <div class="post">
+          <img src="/assets/images/jcp.jpeg" alt="" class="post-image" />
+          <div class="post-preview">
+            <h2>
+              <a href="https://www.unitedwaymumbai.org/cleanshores"
+                >Beach Cleaning Initiative</a
+              >
+            </h2>
+            <br />
+
+            <i class="far fa-user"> Danny Melvine</i>
+            &nbsp; &nbsp; &nbsp;
+            <i class="far calender">May 13,2022</i>
+
+            <p class="preview-text">
+              Beach cleaning or clean-up is the process of removing solid
+              litter, dense chemicals, and organic debris deposited on a beach
+              or coastline by the tide, local visitors, or tourists.
+            </p>
+            <br />
+            <a href="" class="btn read-more">Read More</a>
+          </div>
+        </div>
+
+        <div class="post">
+          <img src="/assets/images/images.jpeg" alt="" class="post-image" />
+          <div class="post-preview">
+            <h2>
+              <a
+                href="https://www.redcrossblood.org/donate-blood/blood-donation-process/donation-process-overview.html"
+                >Blood Donation Drive</a
+              >
+            </h2>
+            <br />
+
+            <i class="far fa-user"> Thomas darwin</i>
+            &nbsp; &nbsp; &nbsp;
+            <i class="far calender">Nov 20,2022</i>
+
+            <p class="preview-text">
+              A blood donation occurs when a person voluntarily has blood drawn
+              and used for transfusions and/or made into biopharmaceutical
+              medications by a process called fractionation
+            </p>
+            <br />
+            <a href="" class="btn read-more">Read More</a>
+          </div>
+        </div>
+
+        <div class="post">
+          <img src="/assets/images/download.jpeg" alt="" class="post-image" />
+          <div class="post-preview">
+            <h2>
+              <a href="https://ladlifoundation.org/pages/street-plays"
+                >Street Play</a
+              >
+            </h2>
+            <br />
+
+            <i class="far fa-user"> Awa Melvine</i>
+            &nbsp; &nbsp; &nbsp;
+            <i class="far calender">May 18,2020</i>
+
+            <p class="preview-text">
+              A street play is known for its catchy dialogues, attractive
+              slogans and powerful dramatic elements.The primary goal of a
+              street play is taking a social message to a mass of people.
+            </p>
+            <br />
+            <a href="" class="btn read-more">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar"></div>
+
+      <div class="section-topics"></div>
+    </div>
+
+    <!---->
+  </body>
+  <script>
+    function login() {
+      window.location.href = window.location.href.replace("motive", "login");
+    }
+    function register() {
+      window.location.href = window.location.href.replace("motive", "register");
+    }
+  </script>
+</html>

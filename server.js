@@ -189,7 +189,7 @@ app.post("/login", (req, res, next) => {
 });
 
 app.get("/motive", (req, res) => {
-  res.sendFile(path.join(__dirname + "/views/motive.html"));
+  res.render("motive");
 });
 
 app.get("/profile", (req, res) => {
